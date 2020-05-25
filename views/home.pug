@@ -1,0 +1,66 @@
+extends base.pug
+
+block scripts
+    script(src='/static/script.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    nav#navbar
+            ul
+                div#logo
+                    img(src="/static/logo.png")
+                    | Dance Acedemy
+                li #[a(href="/") Home]
+                li #[a(href="/") About Us]
+                li #[a(href="/contact" target="_blank") Contact Us]
+                li #[a(href="/") Register]
+                li #[a(href="#missionsection") Class info]
+    section#introsection
+        div Welcome to Lucky's Acedemy
+        div D. A. N. C. E.
+        div.small Dance is Dance not comptition
+            
+        
+    section#missionsection
+        h2 Our Mission
+        div.card
+            h3 This is para
+            div.card-box
+                div.card-img
+                        img(src="/static/logo2.png")
+                div.card-p
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam eum laboriosam maxime id fugiat vel dolores facilis quasi accusamus tempora?
+        div.card
+            h3 This is para
+            div.card-box
+                div.card-img
+                    img(src="/static/logo3.png")
+                div.card-p
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam eum laboriosam maxime id fugiat vel dolores facilis quasi accusamus tempora?
+        div.card
+            h3 This is para
+            div.card-box
+                div.card-img
+                    img(src="/static/logo4.jpg")
+                div.card-p
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam eum laboriosam maxime id fugiat lor vel dolores facilis quasi accusamus tempora?
+
+    section#sponsorsection
+        h2 Our Sponsers
+        div#sponsers
+            div.logos
+                img(src="/static/logo/logo1.jpg" class="spimg")
+                | <a href="/" class="spon">@danceacedemyinsta</a>
+            div.logos
+                img(src="/static/logo/logo2.png" class="spimg")
+                |<a href="/" class="spon">@danceacedemyios</a>
+            div.logos
+                img(src="/static/logo/logo3.jpg" class="spimg")
+                | phone no.<a href="/" class="spon">7988857819</a>
+            div.logos
+                img(src="/static/logo/logo4.jpg" class="spimg")
+                | <a href="/" class="spon">@danceacedemymicrosoft</a>
+    

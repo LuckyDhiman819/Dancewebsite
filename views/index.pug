@@ -1,0 +1,64 @@
+doctype html
+html
+    head
+        title Dance_Acedemy
+        style
+            include ../static/style.css
+
+    body
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/logo.png")
+                    | Dance Acedemy
+                li #[a(href="/") Home]
+                li #[a(href="/") About Us]
+                li #[a(href="/") Contact Us]
+                li #[a(href="/") Register]
+                li #[a(href="/") Class info]
+        section#introsection
+            div Welcome to Lucky's Acedemy
+            div D. A. N. C. E.
+            div.small Dance is Dance not comptition
+            
+        
+        section#missionsection
+            h2 Our Mission
+            div.card
+                h3 This is para
+                div.card-box
+                    div.card-img
+                        img(src="/static/logo2.png")
+                    div.card-p
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam eum laboriosam maxime id fugiat vel dolores facilis quasi accusamus tempora?
+            div.card
+                h3 This is para
+                div.card-box
+                    div.card-img
+                        img(src="/static/logo3.png")
+                    div.card-p
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam eum laboriosam maxime id fugiat vel dolores facilis quasi accusamus tempora?
+            div.card
+                h3 This is para
+                div.card-box
+                    div.card-img
+                        img(src="/static/logo4.jpg")
+                    div.card-p
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam eum laboriosam maxime id fugiat lor vel dolores facilis quasi accusamus tempora?
+
+        section#sponsorsection
+            h2 Our Sponsers
+            div#sponsers
+                img(src="/static/logo/logo1.jpg" class="spimg")
+                img(src="/static/logo/logo2.png" class="spimg")
+                img(src="/static/logo/logo3.jpg" class="spimg")
+                img(src="/static/logo/logo4.jpg" class="spimg")
+            
+        
+        footer
+            |Copyright @ 2020 Luckydanceacedemy.com| reserved
+
+
+
+        script 
+            include ../static/script.js

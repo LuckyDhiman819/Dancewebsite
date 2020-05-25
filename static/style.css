@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    scroll-behavior: smooth;
+}
+#navbar{
+
+    /* background-color: #701616; */
+    padding: 18px 20px;  
+    font-family: 'Balsamiq Sans', cursive;
+    position: sticky;
+    /* background: none; */
+    display: absolute;
+    z-index: 1;
+}
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    margin: 0px 14px;
+    text-decoration: underline;
+    font-size: 12px;
+    color: wheat;
+    margin-right: 30px;
+}
+#logo img{
+    
+    height: 44px;
+    filter: invert(1);
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;  
+    padding: 10px 20px;
+    font-size: 17px;
+       
+}
+#navbar ul li a:hover{
+    text-decoration: underline;
+    color: rgb(22, 21, 21);  
+    background-color: skyblue;
+    border-radius: 20px;
+}
+
+#introsection{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    /* background-color: red; */
+    color: rgb(63, 41, 163);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: dashed;
+}
+#introsection div.small{
+    font-weight: none;
+    font-size: 23px;
+    text-decoration: underline;
+    color: khaki;
+}
+#introsection::before{
+    background: center/cover no-repeat url('/static/dance.jpg') ;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#missionsection{
+    height: 350px;
+    background-color: rgb(160, 140, 231);
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: cursive;
+    margin: auto;
+    display: block;
+}
+#missionsection h2{
+       text-decoration: underline;
+       text-align: center;
+       font-size: 35px;
+       padding: 10px 15px
+}
+.card{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 30%;
+    height: 235px;
+    background-color: wheat;
+    text-align: center;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    height: 170px;
+}
+.card-img{
+    height: 100px;
+    padding: 0 14px;
+}
+.card-img img{
+    /* width: 45px; */
+    height: inherit;
+}
+.card-p{
+    padding: 10px;
+    font-size: 17px;
+}
+.card h3{
+    text-align: center;
+    margin: 5px;
+    text-decoration: underline;
+    font-family: cursive;
+}
+#sponsorsection{
+    height: 300px;
+    background-color: rgb(222, 181, 181);
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: cursive;
+}
+#sponsorsection h2{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 35px;
+    padding: 10px 15px
+}
+#sponsers{
+    height: 200px;
+    max-width: 1000px;
+    margin: auto;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    /* text-align: center; */
+}
+
+.spon{
+    color: black;
+    text-decoration: none;
+}
+.spon:hover{
+    color: red;
+    text-decoration: underline;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+.spimg{
+    height: 150px;
+    margin: 20px;
+}
+footer{
+/* height: 100px; */
+text-decoration: underline;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: black;
+color: white;
+/* font-family: 'Permanent Marker', cursive; */
+text-align: center;
+/* margin: 0px 10px; */
+padding: 20px;
+}

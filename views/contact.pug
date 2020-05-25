@@ -1,0 +1,38 @@
+extends base.pug
+
+block scripts
+    script(src='/static/script.js')
+
+block style
+    style
+        include ../static/style.css
+        include ../static/style1.css
+
+block content
+    nav#navbar
+            ul
+                div#logo
+                    img(src="/static/logo.png")
+                    | Dance Acedemy
+                li #[a(href="/") Home]
+                li #[a(href="/") About Us]
+                //- li #[a(href="/contact" target="_blank") Contact Us]
+                li #[a(href="/") Register]
+                li #[a(href="/#missionsection") Class info]
+    div#container
+        h1 Contact Us
+        form(action="/contact" method="POST" class="myform" )
+            input(type="text" class="myinput" name="Name" placeholder="Entre Your Name"  ) 
+            hr
+            input(type="phone" class="myinput" name="Phone" placeholder="Entre Your Phone"  )
+            hr
+            input(type="email" class="myinput" name="Email" placeholder="Entre Your GMail"  )
+            hr
+            input(type="text" class="myinput" name="Address" placeholder="Entre Your Addres"  )
+            hr
+            input(type="text" class="myinput" name="Concern" placeholder="Entre Your Concern"  )
+            hr
+            button(class="btn")
+               |Submit
+        div#msg
+            | #{message}
